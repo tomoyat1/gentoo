@@ -37,13 +37,13 @@ RDEPEND="
 
 # graphicsmagick's 'convert -channel' has no Alpha support, bug #352282
 DEPEND="${RDEPEND}
-	>=app-text/asciidoc-8.4.5
 	app-text/xmlto
 	dev-util/gperf
 	virtual/pkgconfig
 	media-gfx/imagemagick[png]
 	>=x11-proto/xcb-proto-1.5
 	>=x11-proto/xproto-7.0.15
+	doc? ( >=app-text/asciidoc-8.4.5 )
 	doc? ( dev-lua/ldoc )
 	luajit? ( dev-lang/luajit:2 )"
 
